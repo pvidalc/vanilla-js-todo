@@ -1,6 +1,6 @@
-# vanilla-js-todo
+# Vanilla-js TODO APP
 
-Todo app made with vanillajs
+TODO app made with vanillajs
 
 ## Issues
 
