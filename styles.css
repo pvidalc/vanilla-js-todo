@@ -1,7 +1,9 @@
 html {
     height: 100vh;
+    width: 100vw;
     min-width: 600px;
-    background-image: linear-gradient(130deg, #FFFFFF,#1C3F80);
+    background-image: linear-gradient(130deg, #FFFFFF,#0f6308);
+    padding: 16px;
     background-repeat: no-repeat;
     background-size: auto;
 }
@@ -26,6 +28,7 @@ html {
 
 .main {
     padding: 20px;
+    margin: 10px;
 }
 
 form {
@@ -50,11 +53,11 @@ button {
     background-color: #FFFFFF;
     outline: 0;
     border: none;
-    color: #595959;
+    color: #1c851c;
 }
 
 button:hover {
-    color: lightcoral;
+    color: rgb(57, 197, 116);
 }
 
 .todoList {
