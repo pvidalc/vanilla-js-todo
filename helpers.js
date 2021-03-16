@@ -13,10 +13,11 @@ export function addTodo(todo) {
 
 export function checkTodo(e) {
     let item = e.target.parentNode;
-    if (item.style.textDecoration == 'line-through')
+    if (item.style.textDecoration == 'line-through red') {
         item.style.textDecoration = 'none';
-    else
-        item.style.textDecoration = 'line-through';
+    } else {
+        item.style.textDecoration = 'line-through red';
+    }
 }
 
 export function deleteTodo(e) {
