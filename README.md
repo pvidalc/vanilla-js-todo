@@ -2,10 +2,8 @@
 
 TODO app made with vanillajs
 
-## Issues
+## ES6 modules
 
-### ES6 modules
+## Local Storage
 
-### Local Storage
-
-### Session Storage
+## Session Storage
