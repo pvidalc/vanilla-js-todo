@@ -7,7 +7,7 @@ class AppData {
     }
 
     addTask(text, done) {
-        this.data.push([text, done])
+        this.data.push({tarea: text, hecho: done})
         this.tmstmp = Date.now()
         this.sync()
         return this.data.length -1
@@ -20,13 +20,13 @@ class AppData {
     }
 
     done(id, done) {
-        this.data[id][1] = done
+        this.data[id].hecho = done
         this.tmstmp = Date.now()
         this.sync()
     }
 
     isDone(id) {
-        return this.data[id][1]
+        return this.data[id].hecho
     }
 
     sync() {

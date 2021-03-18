@@ -108,6 +108,6 @@ i {
 }
 
 .todo-list-item-fall {
-    transform: translateY(12rem) rotateZ(10deg);
+    transform: scale(0, 0);
     opacity: 0;
 }
