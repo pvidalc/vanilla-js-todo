@@ -12,8 +12,7 @@ export function addTodo(todo) {
 
 export function presentAll () {
     for (let ar in appData.data) {
-        console.log(appData.data[ar]);
-        presentTodo(ar, appData.data[ar][0],appData.data[ar][1])
+        presentTodo(appData.data[ar].id, appData.data[ar].tarea, appData.data[ar].hecho)
     }
 }
 
