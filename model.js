@@ -7,26 +7,30 @@ class AppData {
     }
 
     addTask(text, done) {
-        this.data.push({tarea: text, hecho: done})
+        let idx = Date.now()
+        this.data.push({id: idx, tarea: text, hecho: done})
         this.tmstmp = Date.now()
         this.sync()
-        return this.data.length -1
+        return idx
     }
     
     deleteTask(id) {
-        this.data.splice(id, 1)
+        let idx = this.data.findIndex(tarea => tarea.id == id)
+        this.data.splice(idx, 1)
         this.tmstmp = Date.now()
         this.sync()
     }
 
     done(id, done) {
-        this.data[id].hecho = done
+        let idx = this.data.findIndex(tarea => tarea.id == id)
+        this.data[idx].hecho = done
         this.tmstmp = Date.now()
         this.sync()
     }
 
     isDone(id) {
-        return this.data[id].hecho
+        let idx = this.data.findIndex(tarea => tarea.id == id)
+        return this.data[idx].hecho
     }
 
     sync() {
