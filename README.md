@@ -1,12 +1,12 @@
 # Vanilla-js TODO APP
 
-TODO app made with vanillajs
+TODO app made with vanillajs.
 
-## ES6 modules
-Use of module attribute to make possible import/export variables, objects and functions from different files.
+The App uses the localStorage functionality to store tasks and retrieve them from the last session in the same browser.
 
-## Local Storage
-Use of localStorage to store tasklist and status from previous sessions
+This is a simple exercise to try some javascript functionalities.
 
-## Session Storage
-(not implemented yet)
+- localStorage
+- javascript modules
+- A bit of HTML/CSS
+
