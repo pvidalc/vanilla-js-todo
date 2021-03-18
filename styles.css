@@ -67,6 +67,8 @@ button:hover {
     padding: 10px 25px;
     height: 100%;
     overflow-y: auto;
+    transition: all 0.3s ease-out;
+
 }
 
 ul {
@@ -113,9 +115,11 @@ i {
 }
 
 .todo-list-empty {
+    transform: scale(0, 0);
     visibility: hidden;
 }
 
 .todo-list-full {
+    transform: scale(1, 1);
     visibility: visible;
 }
