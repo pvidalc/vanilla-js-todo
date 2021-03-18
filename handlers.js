@@ -1,4 +1,4 @@
-import {addTodo, checkTodo, deleteTodo} from './helpers.js'
+import {addTodo, checkTodo, deleteTodo, deleteAll} from './helpers.js'
 
 
 // Event Handlers
@@ -20,4 +20,5 @@ export function handleClickDeleteOrCheck(e) {
 
 export function handleClearAll(e) {
     document.querySelector('ul').innerHTML = '';
+    deleteAll()
 }

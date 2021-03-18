@@ -14,6 +14,11 @@ export function presentAll () {
     for (let ar in appData.data) {
         presentTodo(appData.data[ar].id, appData.data[ar].tarea, appData.data[ar].hecho)
     }
+    let ul = document.querySelector('ul');
+    let box = ul.parentNode
+    if (appData.data.length<1) 
+        box.classList.add('todo-list-empty')
+
 }
 
 function presentTodo(id, todo, done) {
@@ -62,4 +67,9 @@ export function deleteTodo(e) {
     item.classList.add('todo-list-item-fall');
 
     if (appData.data.length<1) box.classList.add('todo-list-empty')
+}
+
+export function deleteAll() {
+  appData.deleteAll()
+  presentAll()  
 }

@@ -33,20 +33,29 @@ html {
 
 form {
     background-color: #FFFFFF;
+    width: 25%;
     padding: 15px;
     border-radius: 5px;
     display: flex;
+    transition: all 0.3s ease-out;
+
 }
+
+form:hover { width:90%; }
 
 input[type="text"] {
     height: 30px;
+    width: 50%;
     outline: 0;
     border: none;
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
     color: #595959;
     flex-grow: 1;
+    
 }
+
+input:hover { width:100%; }
 
 button {
     font-size: 1.5rem;

@@ -14,6 +14,12 @@ class AppData {
         return idx
     }
     
+    deleteAll() {
+        this.data = []
+        this.tmstmp = Date.now()
+        this.sync()
+    }
+
     deleteTask(id) {
         let idx = this.data.findIndex(tarea => tarea.id == id)
         this.data.splice(idx, 1)
