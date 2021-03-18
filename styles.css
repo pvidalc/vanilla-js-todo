@@ -111,3 +111,11 @@ i {
     transform: scale(0, 0);
     opacity: 0;
 }
+
+.todo-list-empty {
+    visibility: hidden;
+}
+
+.todo-list-full {
+    visibility: visible;
+}

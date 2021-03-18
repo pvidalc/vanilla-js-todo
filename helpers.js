@@ -29,6 +29,9 @@ function presentTodo(id, todo, done) {
     if (done) li.style.textDecoration = 'line-through red'
     li.id = id;
     li.classList.add('todo-list-item');
+    
+    let box = ul.parentNode
+    box.classList.remove('todo-list-empty')
     ul.appendChild(li);
 } 
 
@@ -48,6 +51,7 @@ export function checkTodo(e) {
 
 export function deleteTodo(e) {
     let item = e.target.parentNode;
+    let box = item.parentNode.parentNode;
     let id = item.id;
 
     appData.deleteTask(id)
@@ -57,4 +61,6 @@ export function deleteTodo(e) {
     });
 
     item.classList.add('todo-list-item-fall');
+
+    if (appData.data.length<1) box.classList.add('todo-list-empty')
 }
